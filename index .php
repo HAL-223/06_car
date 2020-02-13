@@ -1,7 +1,12 @@
 <?php
 
 // 以下にCarクラスを定義して、当プログラムを実行した時にエラーがでないようにして下さい。
+class User {
+}
 
+$user = new User();
+
+var_dump($user);
 
 
 
