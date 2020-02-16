@@ -12,7 +12,7 @@ class Car {
     $this->color = $color;
   }
   // 車種
-    public function getName() {
+  public function getName() {
     return $this->name;
   }
   
