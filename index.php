@@ -37,17 +37,13 @@ class Car {
   public function setColor($color) {
     $this->color = $color;
   }
-  public function selfIntroduction(){
-    echo "車の車種:" . $this->name  . "、" . "車体番号:" . $this->number . "、" . "カラー:" . $this->color . "です。" . "<br>";
+  public function infomation(){
+    echo "車の車種:" . $this->name  . "、" . "車体番号:" . $this->number . "、" . "カラー:" . $this->color . "です。";
     }
-  // $car1 = new Car('ランクル', 100, 'black'); 
-  // $car1->selfIntrodaction();
-  
   }
+
   $car1 = new Car('ランクル', 100, 'black'); 
-  $car1->selfIntrodaction();
 // 車名(車種)を取得
-$car1->name = "ランクル";
 echo $car1->getName();
 echo '<br>';
 
