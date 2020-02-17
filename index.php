@@ -42,7 +42,7 @@ class Car {
   }
 }
 
-  $car1 = new Car('ランクル', 100, 'black'); 
+$car1 = new Car('ランクル', 100, 'black'); 
 // 車名(車種)を取得
 echo $car1->getName();
 echo '<br>';
