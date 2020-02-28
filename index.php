@@ -43,15 +43,15 @@ class Car {
 }
 
 class Taxi extends Car {
-  private $passeger;
+  private $passenger;
   // private $pickUp;
   // private $lower;
   // public function setPickUp($pickUp) {
   //   $this->pickUp = $pickUp;
   // }
   
-  public function PickUp() {
-      return $this->$passenger + $this->PickUp;
+  public function pickUp($passenger) {
+    return $this->$passenger + $this->PickUp;
     }
 
 
@@ -59,14 +59,19 @@ class Taxi extends Car {
   //   $this->lower = $lower;
   // }
 
-  public function lower() {
-    return $this->$passeger - $this->lower > 0;
+  public function lower($passenger) {
+    if ($this->$passenger - $this->lower > 0) {
+      $this->$passenger - $this->lower = $passenger;
+      echo $passenger . '人降車しました。';
+    } else {
+      echo '降車人数に誤りがあります。';
   }
+}
 
 
   public function infomation() {
     // parent::infomation();
-    echo "車の車種:" . $this->name  . "のタクシー、" . "車体番号:" . $this->number . "、" . "カラー:" . $this->color . "、" . "乗車人数は" . $this->pickUp() . "人です。";
+    echo "車の車種:" . $this->name  . "のタクシー、" . "車体番号:" . $this->number . "、" . "カラー:" . $this->color . "、" . "乗車人数は" . $this->passenger . "人です。";
   }
 }
 
