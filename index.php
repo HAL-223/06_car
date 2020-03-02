@@ -52,14 +52,7 @@ class Taxi extends Car {
   public function pickUp($passenger) {
     return $this->passenger = $passenger;
   }
-
-  // public function setLower($lower) {
-  //   $this->lower = $lower;
-  // }
-  public function getPassenger() {
-    return $this->passenger;
-  }
-
+  
   public function lower($passenger) {
     if ($this->passenger - $passenger >= 0) {
       $this->passenger -= $passenger;
@@ -67,6 +60,10 @@ class Taxi extends Car {
     } else {
       echo '降車人数に誤りがあります。';
     }
+    
+  }
+  public function getPassenger() {
+    return $this->passenger;
   }
 
   public function infomation() {
